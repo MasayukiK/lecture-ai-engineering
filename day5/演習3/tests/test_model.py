@@ -175,6 +175,5 @@ def test_model_reproducibility(sample_data, preprocessor):
 
 def test_model_size():
     theFileSize = os.stat(MODEL_PATH).st_size
-    theFileSizeMB = theFileSize / (1024 * 1024);
+    theFileSizeMB = theFileSize / (1024 * 1024)
     assert theFileSizeMB < 1 * 1024, f"Model file size is too big : {theFileSizeMB}MB"
-   
