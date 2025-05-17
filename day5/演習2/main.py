@@ -11,6 +11,11 @@ import pickle
 import time
 import great_expectations as gx
 
+# For VSCode
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
+
+
 class DataLoader:
     """データロードを行うクラス"""
 
